@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { WrapperContacts, ItemContact } from './Contacts.styled';
+import { WrapperContacts, ItemContact, DeleteButton } from './Contacts.styled';
 
 export const Contacts = ({ contacts, onDeleteContact }) => {
   return (
@@ -10,9 +10,9 @@ export const Contacts = ({ contacts, onDeleteContact }) => {
           contacts.map(contact => (
             <ItemContact key={contact.id}>
               {contact.name}: {contact.number}
-              <button onClick={() => onDeleteContact(contact.id)}>
+              <DeleteButton onClick={() => onDeleteContact(contact.id)}>
                 Delete
-              </button>
+              </DeleteButton>
             </ItemContact>
           ))}
       </ul>

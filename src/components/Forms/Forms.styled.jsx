@@ -49,7 +49,15 @@ export const Button = styled.button`
   background: rgb(0, 117, 255);
   background: linear-gradient(
     90deg,
-    rgba(0, 117, 255, 1) 15%,
-    rgba(0, 208, 255, 1) 89%
+    rgba(0, 117, 255, 0.8) 15%,
+    rgba(0, 208, 255, 0.8) 89%
   );
+  &:hover,
+  &:focus {
+    background: linear-gradient(
+      90deg,
+      rgba(0, 117, 255, 1) 15%,
+      rgba(0, 208, 255, 1) 89%
+    );
+  }
 `;

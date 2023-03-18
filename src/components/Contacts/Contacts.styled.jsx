@@ -15,3 +15,18 @@ export const ItemContact = styled.li`
     background-color: #f6f8fa;
   }
 `;
+export const DeleteButton = styled.button`
+  display: flex;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 15px;
+  color: #fff;
+  background: #e30613;
+  &:hover,
+  &:focus {
+    background: #bd020d;
+  }
+`;
